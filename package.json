@@ -1,0 +1,23 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "Translate \tnumber system to other number system",
+  "main": "app.js",
+  "scripts": {
+    "dev" : "webpack-dev-server --content-base --inline --hot "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack-dev-server": "^1.16.2",
+    "babel-loader": "",
+    "babel-core" : "",
+    "babel-preset-es2015":"",
+    "babel-preset-react": "",
+    "babel-polyfill": "",
+    "babel-runtime": "",
+    "babel-plugin-transform-runtime": "",
+    "react": "",
+    "react-dom": ""
+  }
+}
