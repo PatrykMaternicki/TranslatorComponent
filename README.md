@@ -61,8 +61,14 @@ Validate input.
 ####Arg:
 - Object Digit, 
 - String acceptedCharList.
-####Fields:
 
+####Fields:
+- Digit.
+ - Type: Object.
+ - Class: Model.
+- AcceptedCharList.
+ - Type:Array String.
+ 
 #####Methods:
 -  init: Init Object.
 -  isEmpty: Is empty Input. Return false/true.
@@ -70,5 +76,23 @@ Validate input.
 -  isCorectInputNumber: Check test regex (acceptedCharList). Return false/true.
 -  constructRegex: construct Object regex. return Object new RegExp.      
 
+#Task transferControler.js
+Transfer system number. Throw exception.
+####Arg:
+- Object Digit.
+
+####Fields:
+- Digit
+ - Type: Object
+ - Class: Model
+- Score
+ - Type: String.
+
+####Methods:
+ - transferSystem10: Transfer to decimal Number. Return Number.
+ - transferOutputSystem: Transfer to final system.
+ - convertLetterToNum: Transfer letter to system Number.
+ - convertNumToLetter: Transfer number to letter.
+ 
         
   
