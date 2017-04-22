@@ -12,20 +12,20 @@ Of course, if we need another id. We have to edit file View/app.js and change co
 ```sh
   ReactDom.render(<App nameForm="formExample" />, document.getElementById('yourID'));
 ```
-#Require (dev-version):
+# Require (dev-version):
 - webpack
 - babel-loader
 - babel-preset-es15
 - babel-core
 - babel-polyfill
 
-#Architecture
+# Architecture
 The Project has used the MVC pattern.
  - Model: Model.js
  - Controler: Controler.js, genCharControler.js, TransferControler.js, ValidatorControler.js
  - View: Components.
  
-#Task Model.js
+# Task Model.js
  
  Represents the number of the form:
   - inputSystemNumber: Which system Number used.
@@ -33,7 +33,7 @@ The Project has used the MVC pattern.
   - inputNumber: input
   - resultNumber: result.
   
-#Task Controler.js
+# Task Controler.js
    - Menagment Controlers.
       
 #Task genCharControler.js
@@ -58,18 +58,18 @@ Generate accepted array Char.
         
 #Task validatorControler.js
 Validate input.
-####Arg:
+#### Arg:
 - Object Digit, 
 - String acceptedCharList.
 
-####Fields:
+#### Fields:
 - Digit.
  - Type: Object.
  - Class: Model.
 - AcceptedCharList.
  - Type:Array String.
  
-#####Methods:
+##### Methods:
 -  init: Init Object.
 -  isEmpty: Is empty Input. Return false/true.
 -  isNum : Check is number. Return false/true. Set exception.
@@ -78,17 +78,17 @@ Validate input.
 
 #Task transferControler.js
 Transfer system number. Throw exception.
-####Arg:
+#### Arg:
 - Object Digit.
 
-####Fields:
+#### Fields:
 - Digit
  - Type: Object
  - Class: Model
 - Score
  - Type: String.
 
-####Methods:
+#### Methods:
  - transferSystem10: Transfer to decimal Number. Return Number.
  - transferOutputSystem: Transfer to final system.
  - convertLetterToNum: Transfer letter to system Number.
